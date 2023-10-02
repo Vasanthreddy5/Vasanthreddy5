@@ -1,4 +1,4 @@
-from tkinter import *
+'''from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
 import Mysql.connector
@@ -240,4 +240,93 @@ table.column('dob',width=100)
 table.column('pa',width=100)
 table.bind('<ButtonRelease-1>',get_data)
 fetch_data()
-mainloop()
+mainloop()'''
+
+import tkinter as tk
+import sqlite3
+
+# Create a SQLite database
+conn = sqlite3.connect('hospital.db')
+c = conn.cursor()
+
+# Create a Patients table
+c.execute('''CREATE TABLE IF NOT EXISTS Patients (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT,
+                age INTEGER,
+                gender TEXT,
+                diagnosis TEXT
+             )''')
+conn.commit()
+
+class HospitalManagementSystem:
+    def _init_(self, root):
+        self.root = root
+        self.root.title("Hospital Management System")
+
+        self.label = tk.Label(root, text="Patient Management System", font=("Helvetica", 16))
+        self.label.pack(pady=10)
+
+        self.name_label = tk.Label(root, text="Name:")
+        self.name_label.pack()
+        self.name_entry = tk.Entry(root)
+        self.name_entry.pack()
+
+        self.age_label = tk.Label(root, text="Age:")
+        self.age_label.pack()
+        self.age_entry = tk.Entry(root)
+        self.age_entry.pack()
+
+        self.gender_label = tk.Label(root, text="Gender:")
+        self.gender_label.pack()
+        self.gender_entry = tk.Entry(root)
+        self.gender_entry.pack()
+
+        self.diagnosis_label = tk.Label(root, text="Diagnosis:")
+        self.diagnosis_label.pack()
+        self.diagnosis_entry = tk.Entry(root)
+        self.diagnosis_entry.pack()
+
+        self.add_button = tk.Button(root, text="Add Patient", command=self.add_patient)
+        self.add_button.pack(pady=10)
+
+        self.patient_listbox = tk.Listbox(root)
+        self.patient_listbox.pack()
+
+        self.view_patients()
+
+    def add_patient(self):
+        name = self.name_entry.get()
+        age = self.age_entry.get()
+        gender = self.gender_entry.get()
+        diagnosis = self.diagnosis_entry.get()
+
+        if name and age and gender and diagnosis:
+            c.execute("INSERT INTO Patients (name, age, gender, diagnosis) VALUES (?, ?, ?, ?)",
+                      (name, age, gender, diagnosis))
+            conn.commit()
+            self.clear_entries()
+            self.view_patients()
+        else:
+            tk.messagebox.showerror("Error", "Please fill in all fields.")
+
+    def view_patients(self):
+        self.patient_listbox.delete(0, tk.END)
+        c.execute("SELECT * FROM Patients")
+        patients = c.fetchall()
+        for patient in patients:
+            self.patient_listbox.insert(tk.END, f"Name: {patient[1]}, Age: {patient[2]}, Gender: {patient[3]}, Diagnosis: {patient[4]}")
+
+    def clear_entries(self):
+        self.name_entry.delete(0, tk.END)
+        self.age_entry.delete(0, tk.END)
+        self.gender_entry.delete(0, tk.END)
+        self.diagnosis_entry.delete(0, tk.END)
+
+if _name_ == "_main_":
+    root = tk.Tk()
+    app = HospitalManagementSystem(root)
+    root.mainloop()
+
+# Close the database connection
+conn.close()
