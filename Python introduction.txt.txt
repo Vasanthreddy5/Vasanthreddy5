@@ -1,0 +1,95 @@
+CHAPTER:-1 --->Introduction to python
+
+---->what is python?
+--python is simple,high level,object oriented,and interpreted language and also a general purpose programming language it is know as python
+--python is introduced by "Guido van Rossum" and it was proposed in the year 1991
+--python is dynamically typed language and also a garbage-collected
+
+-->python is simple:-
+  --learning is easy
+  --simple and easy syntax
+
+---->python is high-level programming language
+---high-level --assembly --low level
+   ---the syntax/code of python is understandable to us.
+
+---->python is objected-oriented programming language
+    ---we can create classes and objects in python
+    ---python supports polymorphism,abstraction,encapsulation,inheritance etc.
+    ---python considers everything as object
+
+----->python is interpreted language
+    ----so,final execution of program is performed by interpreted
+
+---->python is general purpose programming language
+   ---Data sci,data analytics,AI,Robitics,web development,android application,games,scripting,web scraping etc
+
+---what is compiler?
+  ---a compiler translates code from high level to machine code or byte code before the program runs is known as compiler.(high levwel to machine code)
+  ---executes after the complition of code.
+
+---what is interpreter?
+   --- a interpreter translates code from high level to manchine code line by line as the code runs. 
+
+----what id IDE?
+  -An IDE is a software where we write our programms.
+
+Features of python
+--python is simple
+--python is general purpose
+--high-level
+--object-oriented
+--free and open source
+--portability
+--platform independent
+--rich support libraries
+--dynamically typed language
+   --python dynamically assigns datatypes to valued.(here if we want to create a avriable in c we have to declare a datatype to it but when it comes to python no need to declare a datatype to a variable it internally assign(datatype) to a variable)
+
+--python is cross platform
+--debugging is very easy in python
+
+Applications in python
+---web development(django,flask,bottle,pyramid)
+---data science
+---machine learning
+---AI/Robotics
+---Data analysis
+---Data mining
+---image processing
+---amdroid development
+---desktop gui Applications
+---business analystics
+
+Installation of python
+---python standard distribution:-(python interpreter,idle,shell,inbuilt packages)
+---.py is an extension of python files
+---IDLE-->Integrated Development Learning Environment
+
+-----ways of running python programms:-
+--using IDLE
+--using shell
+--using command prompt or powershell
+
+----->How python works-----
+   ---write source code
+   ---Compile code using python compiler
+   ---compiler converts into bytecode
+   ---computer doesn't understand bytecode
+   ---so,pvm(python virtual machine) converts bytecode into machine code using interpreter.At last it will create an .exe file and that exe will give to cpu and cpu will execute.
+
+ ----what happens when you hit the run button--------
+      ---First write source code(hello.py)"print("hello world") is our source code and we save it as a file called hello.py-->step-1
+      ---second when you hit the run button compiler takes input as hello.py to compiler and it reads our source code it reads all at a time.--step-2
+      ---third it is converted into byte code (1byte=8bits)that will be inserted as a bytes(hello world is instructed in bytes) it is created in .pyc and all our source code in inserted in bytes.---step-3
+      ---fourth computer doesn't understand byte code and it moves to PVM(pvm has interpreter) where hello.pyc is given to interpreter and then it will give you an executable file(.exe) and that executable file will go to cpu and cpu will give u an execution process.
+
+
+-------why we need both------
+
+  ----if we use only compiler,you will have speed but not portability
+  ----if we use only interpreter you will have portability but not speed.
+  ----So,using both is compromise between speed and portability.
+
+------What is prtability-----
+   ---the same code can be used in different machines.Suppose you write a python code on MAC.if you want to run it on windows or linux later,you don't have to make changes to it.As,such there is no need to write a program multiple times for several platforms.
