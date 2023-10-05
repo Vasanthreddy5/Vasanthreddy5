@@ -1,0 +1,105 @@
+CHAPTER-1:->Introduction to python
+-----Topics:-
+    1) What is python?
+    2) Features of python
+
+
+What is programming:-
+-snake game
+-Programming is just an instructing computer using programming language
+
+Programming languagees:-c,c++,python etc
+
+compiler/interpreter:-
+-There is one problem.our computer understands only binary language(machine level language) {binary language is also known as machine level language}
+-->But,we don't understand this binary language
+-translator(compiler/interpreter)---->binary language(.exe) 
+
+----->IDE is a software where we write our programms.
+
+---What is python----
+---->Python is a widely used high-level-programming language created by "Guido-Van-Rossum" in the late 1991.The language places strong emphasis on code readability and simplicity,making it possible for programmers to develop applications rapidly.
+
+#we can say it as (python is simple,high-level,object-oriented,interpreted,general purpose programming language.)
+
+-->python is simple:-
+ -learning is easy
+ -simple and easy syntax
+
+--->Python is high-level programming language
+1)high-level 2)assembly 3) low level
+--the syntax/code of python is understandable to us.
+
+--->Python is a high level programming language that is easy to understand and read by humans."so,it is called as high-level programming because it is easy for humans to understand and the coding is also quite easy
+
+--->python is object-oriented programming language
+
+--we can create classes and objects in python.
+--python supports polymorphism,abstraction,encapsulation,inheritance etc.
+--python considers everything as object
+
+-python is interpreted language:-
+---->An interpreter translates code written in a high level programming language into machine code line-by-line as the code runs.(high level to low level)
+
+---what is compiler
+---->a compiler translates from a high-level programming language into machine code before the program runs.
+
+--python is general purpose language
+---->Data sci,data analytics,AI,Roboticcs,web dev,android application,games,scripting,web scraping etc
+
+-->And it os first appered on 20 February 1991.
+
+-->Python is Dynamically typed and a garbage-collected.it supports multiple programming paradigms,including structured,object-oriented and functional programming.
+
+Features of python:-
+  1.python is simple
+  2.open source and free
+  3.simple learn
+  4.python is general purpose
+  5.object oriented
+  6.portability
+  7.platform independent
+  8.standard libraries
+  9.rich library support
+  10.embeddable
+  11.python supports multiple programming patterns
+   --procedures
+   --functional
+   --control sequences
+   --object oriented
+   12.dynamically typed language
+   (suppose u want to create variable in c we create int a=12; but in python dynamically assigns datatypes to values. )
+
+---Applications of python
+1.web development(django,flask,bottle,pyramid)
+2.data science
+3.machine larning
+4.data analysis
+5.data mining
+6.AI/robotics
+7.android development
+8.image processing
+9.database access
+10.desktop gui applications
+11.business applications
+12.network programming
+
+-->How Python works
+
+1.write source code.
+2.compile code using python compiler
+3.compiler converts into bytecode
+4.computer doesn't understand bytecode.
+5.so,pvm converts bytecode into machine code using interpreter.
+
+python code(Hello.py)-->compiler--->bytecode(hello.pyc)-->PVM(interpreter)-->machinecode(hello.exe)
+
+--->why we need both?
+--if we use only compiler,you will have speed but not portability
+--if we use only interpreter you will have portability but not speed.
+--so,using both is compromise between speed and portability.
+
+---why python
+---->python works on different platforms(windows,mac,linux,raspberry pi,etc)
+---->python has a simple syntax similar to the english language
+--->python has syntax that allows developers to write pgm with fewr lines than some other programming languages.
