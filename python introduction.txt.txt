@@ -97,7 +97,7 @@ python code(Hello.py)-->compiler--->bytecode(hello.pyc)-->PVM(interpreter)-->mac
 --->why we need both?
 --if we use only compiler,you will have speed but not portability
 --if we use only interpreter you will have portability but not speed.
---so,using both is compromise between speed and portability.
+--so,using both is compromise between speed and portability..
 
 ---why python
 ---->python works on different platforms(windows,mac,linux,raspberry pi,etc)
