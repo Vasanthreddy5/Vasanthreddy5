@@ -14,3 +14,6 @@ if num>1:
         print("number is prime")
     else:
         print("the number is not a prime number")    
+
+#output
+the given number is prime
