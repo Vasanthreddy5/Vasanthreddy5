@@ -89,7 +89,7 @@ Installation of python
 
   ----if we use only compiler,you will have speed but not portability
   ----if we use only interpreter you will have portability but not speed.
-  ----So,using both is compromise between speed and portability.
+  ----So,using both is compromise between speed and portability......#
 
 ------What is prtability-----
    ---the same code can be used in different machines.Suppose you write a python code on MAC.if you want to run it on windows or linux later,you don't have to make changes to it.As,such there is no need to write a program multiple times for several platforms.
